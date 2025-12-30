@@ -76,7 +76,7 @@ def display_movie_grid(movies, cols=5, clickable=True, key_prefix=""):
                 poster = load_poster(movie["poster"])
                 
                 if poster:
-                    st.image(poster, use_container_width=True)
+                    st.image(poster)
                 else:
                     st.write("No Poster Available")
                 
@@ -112,7 +112,7 @@ def display_movie_detail(movie_id):
     with col1:
         poster = load_poster(movie["poster"])
         if poster:
-            st.image(poster, use_container_width=True)
+            st.image(poster)
         else:
             st.write("No Poster Available")
         
