@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # mapping genre ids to genre names
-genres ={
+genres = {
     28: "Action",
     12: "Adventure",   
     16: "Animation",
@@ -27,7 +27,7 @@ genres ={
 }
 
 # classifying moods for easy user experience
-moods={
+moods = {
     "Happy": ["Comedy", "Family", "Animation", "Music", "Romance"],
     "Sad": ["Drama", "Documentary", "History"],
     "Energized": ["Action", "Adventure", "Science Fiction", "Fantasy"],
@@ -99,3 +99,4 @@ def get_all_similar_movies(movie_ids, top_n):
 
 test_case = get_all_similar_movies(movies_df["id"].iloc[0:3], 5)
 print(test_case)
+
