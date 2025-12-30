@@ -4,7 +4,7 @@ import pandas as pd
 API_KEY = "c9beeea715999df6bdcef6e7140e35b0"
 BASE_URL = "https://api.themoviedb.org/3/movie/popular"
 
-def fetch_movies(pages=10):
+def fetch_movies(pages):
     all_movies = []
 
     for page in range(1, pages+1):
@@ -28,4 +28,4 @@ def fetch_movies(pages=10):
     print("Saved movies.csv!")
 
 if __name__ == "__main__":
-    fetch_movies(pages=20)
+    fetch_movies(pages=100)

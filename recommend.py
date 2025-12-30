@@ -84,7 +84,7 @@ def get_similar_movies(movie_id, top_n):
             if len(ids) >= top_n:
                 break
 
-    return movies_df.iloc[top_n_indices][["id", "title", "overview", "genre_ids", "vote_avg"]]
+    return movies_df.iloc[top_n_indices][["id", "title", "overview", "genre_ids", "vote_avg", "poster", "popularity"]]
 
 # function to get similar movies for a list of movie ids
 def get_all_similar_movies(movie_ids, top_n):
@@ -98,5 +98,5 @@ def get_all_similar_movies(movie_ids, top_n):
     return all_movies
 
 test_case = get_all_similar_movies(movies_df["id"].iloc[0:3], 5)
-print(test_case)
+
 

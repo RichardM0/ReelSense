@@ -16,5 +16,3 @@ movies_df["vote_avg"] = vote_avg_scaled
 
 # export as new csv with the scaled data
 movies_df.to_csv("movies.csv", index=False)
-
-
