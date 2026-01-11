@@ -1,7 +1,7 @@
 import requests
 import pandas as pd
 
-API_KEY = "c9beeea715999df6bdcef6e7140e35b0"
+API_KEY = "INSERT_API_KEY"
 BASE_URL = "https://api.themoviedb.org/3/movie/popular"
 
 def fetch_movies(pages):
